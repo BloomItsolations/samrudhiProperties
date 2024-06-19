@@ -1,0 +1,126 @@
+html {
+scroll-behavior: smooth;  
+overflow:auto;
+scroll-padding-top: 70px;
+}
+
+.logo {
+    position: fixed;
+    display: inline;
+    top: 10px;
+}
+
+p
+{
+	/*font-family:'PT Sans Caption',Arial,sans-serif;*/
+}
+
+.header {
+    background-color: #ffffff;
+	color:#fff;
+}
+.primarycolor{
+	background-color: #005dc6;
+	color:#fff;
+}
+.secondarycolor{
+	background-color: #6f903e;
+	color:#fff;
+}
+
+.navbar {
+    width: 100%;
+	height:85px;
+}
+
+.navbar a, .navbar a:focus {
+    font-size: 1.0rem;
+    font-weight: 500;
+	color: #000 !important;
+}
+.navbar a:hover {
+    font-size: 1.0rem;
+    font-weight: 500;
+	color: #6f903e !important;
+}
+
+.navbar-nav .nav-item.nav-link:hover {
+    /*color:#BE2026;*/
+}
+
+#navbarCollapse .navbar-nav {
+    margin-left: auto;
+}
+
+h2 {
+	font-size:1.8rem;
+}
+h3 {
+	font-size:1.4rem;
+}
+section{
+	padding-top:50px;
+	padding-bottom:40px;
+}
+
+.iconcss {
+    font-size: 75px;
+    color: #ddd;
+    padding: 5px;
+    background-color: #eee;
+	border-radius: 10px;
+	border: 1px solid #005dc6;
+}
+
+// zoom css start
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+.carousel-inner .carousel-item div > img {
+  -webkit-animation: zoom 10s;
+  animation: zoom 10s;
+}
+// zoom css end
+#navbarNav {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width: 767px){
+
+	h2{
+		font-size:0.9rem;
+	}	
+	h6{
+		font-size:0.7rem;
+	}	
+	.modal-body input{
+			margin:5px;
+			height:30px;
+			width:80% !important;
+			margin-left:0px;
+		}
+	.modal-body i{
+		height:30px;
+		width:30px;
+	}	
+	.navbar-collapse {
+	background: #ffffff;
+	padding: 3rem 0 0 0;
+	text-align:center;
+	}
+}
