@@ -72,7 +72,7 @@ section{
 	border: 1px solid #005dc6;
 }
 
-// zoom css start
+
 @-webkit-keyframes zoom {
   from {
     -webkit-transform: scale(1, 1);
@@ -95,7 +95,7 @@ section{
   -webkit-animation: zoom 10s;
   animation: zoom 10s;
 }
-// zoom css end
+
 #navbarNav {
     padding-left: 300px;
 }
