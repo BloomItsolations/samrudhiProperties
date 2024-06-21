@@ -897,7 +897,7 @@
         transform: translateY(0);
     }
 }
-.maps-iframe {
+/* .maps-iframe {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -921,7 +921,7 @@
 }
 
 .maps-iframe img {
-    width: 100%; /* Adjusted width */
+    width: 100%; 
     height: auto;
     display: block;
     border-radius: 8px;
@@ -937,7 +937,7 @@
     margin-top: 10px;
     font-size: 14px;
     color: #666;
-}
+} */
 /* Gallery Section */
 #section-gallery {
     padding: 50px 0;
@@ -974,6 +974,7 @@
 .enquire-btn{
     height: 50px;
 }
+
 .enquire-btn:hover {
     border: 2px solid grey;
     background-color: black;
@@ -1096,4 +1097,190 @@
             display: none;
         }
     }
+}
+
+/* Premium Section Styles */
+#completed-projects-section {
+  background: linear-gradient(135deg, #f3f4f7, #e1e5ee);
+  padding: 60px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background styling with decorative elements */
+#completed-projects-section::before,
+#completed-projects-section::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+}
+
+#completed-projects-section::before {
+  width: 300px;
+  height: 300px;
+  top: -150px;
+  left: -150px;
+}
+
+#completed-projects-section::after {
+  width: 200px;
+  height: 200px;
+  bottom: -100px;
+  right: -100px;
+}
+
+#completed-projects-section .container {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+#completed-projects-section .section-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: 700;
+  position: relative;
+}
+
+#completed-projects-section .section-title::after {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background: #3498db;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+#completed-projects-section .projects-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#completed-projects-section .project-item {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #34495e;
+  transition: color 0.3s ease;
+}
+
+#completed-projects-section .project-item:hover {
+  color: #3498db;
+}
+
+#completed-projects-section .note {
+  margin-top: 30px;
+  font-size: 1em;
+  color: #4e6061;
+  font-style: italic;
+}
+
+#completed-projects-section-phrase {
+  font-size: 1.6em;
+  color: #555;
+  font-style: italic;
+  padding: 10px;
+  border: 2px solid #3498db; /* Transparent border initially */
+  transition: border-color 0.9s ease; /* Smooth transition for border color */
+}
+
+#completed-projects-section-phrase:hover {
+  border: 3px dotted #3498db;
+  color: #333; /* Darker text color on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* CSS for Maps Iframe Section */
+.maps-iframe-section {
+    max-width: 1000px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+}
+
+.maps-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.maps-col {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.iframe-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Ensure image aspect ratio is maintained */
+    display: block;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.iframe-container:hover img {
+    transform: scale(1.05); /* Scale up image on hover */
+}
+
+.iframe-p {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* CSS for Maps Iframe Section */
+.maps-iframe {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.row-001 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.col-lg-6,
+.col-md-6,
+.col-sm-12,
+.col-xs-12 {
+  flex: 1;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.iframe-container img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.iframe-container:hover img {
+  transform: scale(1.05); /* Scale up image on hover */
+}
+
+.iframe-p {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.1em;
+  color: #333;
 }
